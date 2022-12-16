@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1021180346846",
+    "firebase_url": "https://orderfood-23d43-default-rtdb.firebaseio.com",
+    "project_id": "orderfood-23d43",
+    "storage_bucket": "orderfood-23d43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021180346846:android:726783e6f180dd909ddd4f",
+        "android_client_info": {
+          "package_name": "com.example.orderfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021180346846-js0u44s6et44r7vsfdef7b5m4g4bgvlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi6GdUov9ianoARxWG-ZVWiwWMaMcjq5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021180346846-js0u44s6et44r7vsfdef7b5m4g4bgvlt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

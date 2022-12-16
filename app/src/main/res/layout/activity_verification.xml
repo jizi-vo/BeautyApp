@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".activities.VerificationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/received"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkGray"
+            android:text="Xác thực OTP"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:textAlignment="center"
+            android:text="Quý khách vui lòng nhập mã OTP đã được gửi đến số điện thoại của quý khách"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/inputCode1"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/inputCode2"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginStart="4dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/inputCode3"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginStart="4dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/inputCode4"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginStart="4dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/inputCode5"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginStart="4dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/inputCode6"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:layout_marginStart="4dp"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkGray"
+                tools:ignore="LabelFor"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Không nhận được mã OTP?"/>
+
+            <TextView
+                android:id="@+id/resendOTP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gửi lại mã"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/countDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnVerify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="Xác nhận"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"/>
+
+            <ProgressBar
+                android:id="@+id/verification_progressBar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

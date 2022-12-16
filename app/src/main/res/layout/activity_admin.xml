@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminActivity"
+    android:background="@drawable/background8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7">
+            <TextView
+                android:id="@+id/textView3"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/amarante"
+                android:text="Admin"
+                android:textColor="#673632"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_weight="3"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/admin_mon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txt_bg_admin"
+                android:textAlignment="center"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:text="Sản Phẩm"
+                android:textSize="16sp"
+                android:textColor="#673632"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/admin_loaimon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txt_bg_admin"
+                android:textAlignment="center"
+                android:paddingTop="9dp"
+                android:textSize="16sp"
+                android:paddingBottom="9dp"
+                android:text="Loại Sản Phẩm"
+                android:textColor="#673632"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/admin_donhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txt_bg_admin"
+                android:textAlignment="center"
+                android:paddingTop="9dp"
+                android:textSize="16sp"
+                android:paddingBottom="9dp"
+                android:text="Đơn Hàng"
+                android:textColor="#673632"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:id="@+id/admin_khach_hang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txt_bg_admin"
+                android:textAlignment="center"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:text="Tài Khoản"
+                android:textSize="16sp"
+                android:textColor="#673632"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/admin_doanhthu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txt_bg_admin"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:text="Thống Kê"
+                android:textColor="#673632"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/admin_cuahang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txt_bg_admin"
+                android:textAlignment="center"
+                android:paddingTop="9dp"
+                android:textSize="16sp"
+                android:paddingBottom="9dp"
+                android:text="Cửa Hàng"
+                android:textColor="#673632"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/admin_dangxuat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/txt_bg_admin"
+                android:textAlignment="center"
+                android:paddingTop="9dp"
+                android:textSize="16sp"
+                android:paddingBottom="9dp"
+                android:text="Đăng Xuất"
+                android:textColor="#673632"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

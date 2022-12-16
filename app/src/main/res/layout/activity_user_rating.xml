@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserRatingActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/user_rating_dang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG"
+        android:textColor="@color/purple_700"
+        android:gravity="end"
+        android:padding="16dp"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B5B5B5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_rating_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/user_rating_ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Nguyễn Văn A"
+                    android:maxLines="1"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đây là những bài đánh giá công khai và chứa thông tin của bạn."/>
+            </LinearLayout>
+        </LinearLayout>
+        <RatingBar
+            android:id="@+id/user_rating_ratingbar"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/user_rating_cmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:maxLength="200"
+            android:padding="10dp"
+            android:hint="Mô tả trải nghiệm của bạn"
+            android:background="@drawable/rating_bg_design"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+            <TextView
+                android:id="@+id/user_rating_maxlenght"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@color/darkGray"
+                android:text="0"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/darkGray"
+                android:text="/200"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

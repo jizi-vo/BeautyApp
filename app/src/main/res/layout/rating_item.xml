@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/rating_img_rec"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/user"/>
+
+                <TextView
+                    android:id="@+id/rating_ten_rec"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyễn Văn A"
+                    android:textColor="@color/darkGray"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <RatingBar
+                android:id="@+id/rating_raingbar_rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"/>
+
+            <TextView
+                android:id="@+id/rating_date_rec"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27/11/2021"
+                android:textColor="@color/darkGray"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/rating_cmt_rec"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkGray"
+            android:text="Determinate mode (Chế độ xác định): Bạn nên sử dụng chế độ này cho ProgressBar nếu bạn có thể xác định được phần trăm công việc đã được thực hiện. Chẳng hạn, tỷ lệ phần trăm tệp đã được tải xuống, số lượng bản ghi được trèn vào cơ sở dữ liệu,..."/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.KhachHangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Tài Khoản"
+            android:textAlignment="center"
+            android:textColor="@color/darkGray"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/admin_khach_hang_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/khachhang_search_bg"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:drawablePadding="9dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/amita"
+            android:hint="Search..."
+            android:maxLines="1"
+            android:padding="10dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/customer_swiper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_khach_hang"
+                    android:layout_marginTop="6dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
