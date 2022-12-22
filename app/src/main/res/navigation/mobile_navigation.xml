@@ -7,28 +7,28 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.orderfood.ui.home.HomeFragment"
+        android:name="com.example.BeautyApp.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.example.orderfood.ui.profile.ProfileFragment"
+        android:name="com.example.BeautyApp.ui.profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/nav_my_orders"
-        android:name="com.example.orderfood.ui.my_orders.MyOrdersFragment"
+        android:name="com.example.BeautyApp.ui.my_orders.MyOrdersFragment"
         android:label="My Orders"
         tools:layout="@layout/fragment_my_orders" />
     <fragment
         android:id="@+id/nav_my_cart"
-        android:name="com.example.orderfood.ui.my_cart.MyCartFragment"
+        android:name="com.example.BeautyApp.ui.my_cart.MyCartFragment"
         android:label="My Cart"
         tools:layout="@layout/fragment_my_cart" />
     <fragment
         android:id="@+id/maps_fragment"
-        android:name="com.example.orderfood.ui.map.MapsFragment"
+        android:name="com.example.BeautyApp.ui.map.MapsFragment"
         android:label="Địa chỉ"
         tools:layout="@layout/fragment_maps" />
 </navigation>
